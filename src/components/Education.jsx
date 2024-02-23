@@ -7,12 +7,12 @@ import "react-vertical-timeline-component/style.min.css";
 
 const Education = () => {
   return (
-    <section className="flex flex-col items-center justify-center">
+    <section className="flex flex-col items-center justify-center px-10 sm:px-28">
       <span className="text-[20px] font-[400]">Education</span>
       <h2 className="text-[40px] font-[500]">My Education</h2>
 
-      <div className="grid grid-cols-2 place-items-center mt-10">
-        <div className="grid grid-rows-3 place-items-center gap-[15rem]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 place-items-center mt-10">
+        <div className="hidden sm:grid grid-rows-3 place-items-center gap-[15rem]">
           <div className="flex items-start flex-col justify-start gap-[8px]">
             <span>Tokyo University</span>
             <span>4 years (2019-2022)</span>
@@ -26,7 +26,7 @@ const Education = () => {
             <span>(Then-Now)</span>
           </div>
         </div>
-        <div className="w-[70%]">
+        <div className="w-full sm:w-[70%]">
           <VerticalTimeline
             layout={"1-column-left"}
             lineColor={"black"}
